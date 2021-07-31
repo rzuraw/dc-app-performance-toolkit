@@ -1,0 +1,1476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<sample t="39" lt="0" ts="1627734587397" s="false" lb="jmeter_edit_issue:open_editor" rc="502" rm="Number of samples in transaction : 6, number of failing samples : 1" tn="Jira 1-122" dt="" de="" by="9227" ng="200" na="200">
+  <httpSample t="2" lt="2" ts="1627734587397" s="false" lb="700 /secure/EditIssue!default.jspa" rc="502" rm="Bad Gateway" tn="Jira 1-122" dt="text" de="" by="680" ng="200" na="200">
+    <assertionResult>
+      <name>Response Assertion</name>
+      <failure>true</failure>
+      <error>false</error>
+      <failureMessage>Test failed: text expected to contain / Edit Issue:  [AAFAIA-4907]/</failureMessage>
+    </assertionResult>
+    <responseHeader class="java.lang.String">HTTP/1.1 502 Bad Gateway
+Server: awselb/2.0
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: text/html
+Content-Length: 122
+Connection: keep-alive
+Set-Cookie: AWSALB=KtKvQda0KE6EaKSQHOdYTZYoNUK7l+HBZ4IEokdqDJ4WQBL+wtTg1qLx1656UqrF+KiYmYJkFUHABNriv6T20GijqcuCVAmOF6iJwujqLCg16cfx3a8DMJMM/8wO; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=KtKvQda0KE6EaKSQHOdYTZYoNUK7l+HBZ4IEokdqDJ4WQBL+wtTg1qLx1656UqrF+KiYmYJkFUHABNriv6T20GijqcuCVAmOF6iJwujqLCg16cfx3a8DMJMM/8wO; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept-Language: en-US,en;q=0.5
+Upgrade-Insecure-Requests: 1
+Accept-Encoding: gzip, deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <responseData class="java.lang.String">&lt;html&gt;&#xd;
+&lt;head&gt;&lt;title&gt;502 Bad Gateway&lt;/title&gt;&lt;/head&gt;&#xd;
+&lt;body&gt;&#xd;
+&lt;center&gt;&lt;h1&gt;502 Bad Gateway&lt;/h1&gt;&lt;/center&gt;&#xd;
+&lt;/body&gt;&#xd;
+&lt;/html&gt;&#xd;
+</responseData>
+    <cookies class="java.lang.String">JSESSIONID=4CBDF2C4D1974AECF413E1B88F05A4D3; atlassian.xsrf.token=BW47-UYM6-8XU5-BT4K_c4eefdc59ae7d587f77019e852eb50f9d8607fd7_lin; AWSALB=2zF3KgfRIhjV8JJaJawGRPPjhLKbUytyCoIWnYABjrgsbwrD/SDumVC0BQJNR8UpgZx674JaalLmU+U2ZnRDTy7prTyFQRskLGeKVLwwUk2dJi8Bq1t04xvfZcch; AWSALBCORS=2zF3KgfRIhjV8JJaJawGRPPjhLKbUytyCoIWnYABjrgsbwrD/SDumVC0BQJNR8UpgZx674JaalLmU+U2ZnRDTy7prTyFQRskLGeKVLwwUk2dJi8Bq1t04xvfZcch</cookies>
+    <method class="java.lang.String">GET</method>
+    <queryString class="java.lang.String"></queryString>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/secure/EditIssue!default.jspa?id=210415</java.net.URL>
+  </httpSample>
+  <httpSample t="12" lt="12" ts="1627734587402" s="true" lb="705 /rest/webResources/1.0/resources" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="1548" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: AWSALB=7qtsr8NxUs09RWqpk7aV7h/jkTj5Fx1XoUYwggMjS0P+/oIez8atDG3LL647YEQqFBwE3kyNnVzG1SAAhB0Pki2DxYTLvrePpEPpeEwIzNsnnLgRMDXdT1GGs5gg; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=7qtsr8NxUs09RWqpk7aV7h/jkTj5Fx1XoUYwggMjS0P+/oIez8atDG3LL647YEQqFBwE3kyNnVzG1SAAhB0Pki2DxYTLvrePpEPpeEwIzNsnnLgRMDXdT1GGs5gg; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679363x12
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Content-Length: 184
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/webResources/1.0/resources</java.net.URL>
+  </httpSample>
+  <httpSample t="8" lt="8" ts="1627734587415" s="true" lb="710 /rest/webResources/1.0/resources" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="2939" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: AWSALB=YINGISOzeX5wu3nbh8Dau1W+Ue0ANBzUN4oL9CLchCQFxxI7siM0BWpmjs5KXjlLCflUcUt+VsXvul8+/dW998j4d13tFfBmEocCKI4ThdIF1aoMbJQVTSRGWvuA; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=YINGISOzeX5wu3nbh8Dau1W+Ue0ANBzUN4oL9CLchCQFxxI7siM0BWpmjs5KXjlLCflUcUt+VsXvul8+/dW998j4d13tFfBmEocCKI4ThdIF1aoMbJQVTSRGWvuA; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679369x12
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Content-Length: 504
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/webResources/1.0/resources</java.net.URL>
+  </httpSample>
+  <httpSample t="5" lt="5" ts="1627734587423" s="true" lb="715 /rest/analytics/1.0/publish/bulk" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="981" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+Set-Cookie: AWSALB=uxECTh4Ix2Gx3/DX4CBGAELc4Fy4n90W4H9c9Ma7S3iJI0fs07GkF3g3T5QP89gMZwM3SRgzCz1oGV6pvgbXRwWH4Q9R+DzbW12DeFmHnX2TZQANQQbrEu8G0f3x; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=uxECTh4Ix2Gx3/DX4CBGAELc4Fy4n90W4H9c9Ma7S3iJI0fs07GkF3g3T5QP89gMZwM3SRgzCz1oGV6pvgbXRwWH4Q9R+DzbW12DeFmHnX2TZQANQQbrEu8G0f3x; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679374x11
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Content-Length: 712
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/analytics/1.0/publish/bulk</java.net.URL>
+  </httpSample>
+  <httpSample t="8" lt="8" ts="1627734587428" s="true" lb="725 /rest/internal/2/user/mention/search" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="2098" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: AWSALB=2zkhMovs9nGr+qNVCrsVUwjXfO0SNx2r2e7+Um2zBcYqsZhqcp5qcgns8E6a2MJHI0FjxoUA34wTDNx7T41wgub2i+p0xLRQZNSsCy429lNpsTHvY5oX/dhxGsyw; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=2zkhMovs9nGr+qNVCrsVUwjXfO0SNx2r2e7+Um2zBcYqsZhqcp5qcgns8E6a2MJHI0FjxoUA34wTDNx7T41wgub2i+p0xLRQZNSsCy429lNpsTHvY5oX/dhxGsyw; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679377x13
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+Vary: User-Agent
+Content-Encoding: gzip
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept-Language: en-US,en;q=0.5
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json; charset=UTF-8
+Accept-Encoding: gzip, deflate
+Accept: application/json, text/javascript, */*; q=0.01
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/internal/2/user/mention/search?issueKey=AAFAIA-4907&amp;projectKey=AAFAIA&amp;maxResults=10&amp;_=1627734587428</java.net.URL>
+  </httpSample>
+  <httpSample t="4" lt="4" ts="1627734587437" s="true" lb="720 /rest/analytics/1.0/publish/bulk" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="981" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+Set-Cookie: AWSALB=luYgI0YFPUKEWBpbU1JeTdMIvykE44aO8GNXlzz2mA0c3R/rggA8ZVJLnGMaWapanZg9eNiVEfuS5ig0UAR6TwG/FfDJFXFrlKtGqiIrDTh/I3dlT6qZgERfBQqi; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=luYgI0YFPUKEWBpbU1JeTdMIvykE44aO8GNXlzz2mA0c3R/rggA8ZVJLnGMaWapanZg9eNiVEfuS5ig0UAR6TwG/FfDJFXFrlKtGqiIrDTh/I3dlT6qZgERfBQqi; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679380x13
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Content-Length: 3237
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/analytics/1.0/publish/bulk</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+<sample t="180" lt="0" ts="1627734587453" s="false" lb="jmeter_edit_issue:save_edit" rc="200" rm="Number of samples in transaction : 9, number of failing samples : 1" tn="Jira 1-122" dt="" de="" by="30155" ng="200" na="200">
+  <httpSample t="98" lt="76" ts="1627734587454" s="false" lb="730 /secure/EditIssue.jspa?atl_token=NOT FOUND" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="10763" ng="200" na="200">
+    <assertionResult>
+      <name>Response Assertion</name>
+      <failure>true</failure>
+      <error>false</error>
+      <failureMessage>Test failed: text expected to contain /[AAFAIA-4907]/</failureMessage>
+    </assertionResult>
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: text/html;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: AWSALB=6aKvnyFyTBXuAQN00wU9NCCp7lqKkzC1hp4Zs77lw19+SVfybDGI8Z/38F4jIbAvnbeTqgmg+b9vNTqVOpH0ZaqmxdAFEifJDbZ6C4iI76tB5LYCZy33UWrc/cRM; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=6aKvnyFyTBXuAQN00wU9NCCp7lqKkzC1hp4Zs77lw19+SVfybDGI8Z/38F4jIbAvnbeTqgmg+b9vNTqVOpH0ZaqmxdAFEifJDbZ6C4iI76tB5LYCZy33UWrc/cRM; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679382x13
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Vary: User-Agent
+Content-Encoding: gzip
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept-Language: en-US,en;q=0.5
+Upgrade-Insecure-Requests: 1
+Accept-Encoding: gzip, deflate
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Content-Length: 2315
+Content-Type: multipart/form-data; boundary=bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <responseData class="java.lang.String">
+
+
+
+
+
+
+
+
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+    
+
+
+
+
+
+
+
+
+
+&lt;meta charset=&quot;utf-8&quot;&gt;
+&lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=Edge&quot;/&gt;
+&lt;title&gt;XSRF Security Token Missing - GDPR dataset&lt;/title&gt;
+&lt;meta name=&quot;application-name&quot; content=&quot;JIRA&quot; data-name=&quot;jira&quot; data-version=&quot;8.13.7&quot;&gt;&lt;meta name=&quot;ajs-server-scheme&quot; content=&quot;http&quot;&gt;
+&lt;meta name=&quot;ajs-server-port&quot; content=&quot;80&quot;&gt;
+&lt;meta name=&quot;ajs-server-name&quot; content=&quot;jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com&quot;&gt;
+&lt;meta name=&quot;ajs-behind-proxy&quot; content=&quot;null&quot;&gt;
+&lt;meta name=&quot;ajs-base-url&quot; content=&quot;http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com&quot;&gt;
+&lt;meta name=&quot;ajs-dev-mode&quot; content=&quot;false&quot;&gt;
+&lt;meta name=&quot;ajs-context-path&quot; content=&quot;&quot;&gt;
+&lt;meta name=&quot;ajs-version-number&quot; content=&quot;8.13.7&quot;&gt;
+&lt;meta name=&quot;ajs-build-number&quot; content=&quot;813007&quot;&gt;
+&lt;meta name=&quot;ajs-is-beta&quot; content=&quot;false&quot;&gt;
+&lt;meta name=&quot;ajs-is-rc&quot; content=&quot;false&quot;&gt;
+&lt;meta name=&quot;ajs-is-snapshot&quot; content=&quot;false&quot;&gt;
+&lt;meta name=&quot;ajs-is-milestone&quot; content=&quot;false&quot;&gt;
+&lt;meta name=&quot;ajs-remote-user&quot; content=&quot;performance_dfzfhoubvk&quot;&gt;
+&lt;meta name=&quot;ajs-remote-user-fullname&quot; content=&quot;performance_dfzfhoubvk&quot;&gt;
+&lt;meta name=&quot;ajs-user-locale&quot; content=&quot;en_US&quot;&gt;
+&lt;meta name=&quot;ajs-user-locale-group-separator&quot; content=&quot;,&quot;&gt;
+&lt;meta name=&quot;ajs-app-title&quot; content=&quot;GDPR dataset&quot;&gt;
+&lt;meta name=&quot;ajs-keyboard-shortcuts-enabled&quot; content=&quot;true&quot;&gt;
+&lt;meta name=&quot;ajs-keyboard-accesskey-modifier&quot; content=&quot;Alt&quot;&gt;
+&lt;meta name=&quot;ajs-enabled-dark-features&quot; content=&quot;[&amp;quot;com.atlassian.jira.agile.darkfeature.editable.detailsview&amp;quot;,&amp;quot;nps.survey.inline.dialog&amp;quot;,&amp;quot;com.atlassian.jira.agile.darkfeature.edit.closed.sprint.enabled&amp;quot;,&amp;quot;jira.plugin.devstatus.phasetwo&amp;quot;,&amp;quot;jira.frother.reporter.field&amp;quot;,&amp;quot;atlassian.rest.xsrf.legacy.enabled&amp;quot;,&amp;quot;jira.issue.status.lozenge&amp;quot;,&amp;quot;com.atlassian.jira.config.BIG_PIPE&amp;quot;,&amp;quot;com.atlassian.jira.projects.issuenavigator&amp;quot;,&amp;quot;com.atlassian.jira.config.PDL&amp;quot;,&amp;quot;jira.plugin.devstatus.phasetwo.enabled&amp;quot;,&amp;quot;atlassian.aui.raphael.disabled&amp;quot;,&amp;quot;app-switcher.new&amp;quot;,&amp;quot;frother.assignee.field&amp;quot;,&amp;quot;sd.internal.base.off.thread.on.completion.events.enabled&amp;quot;,&amp;quot;com.atlassian.jira.projects.ProjectCentricNavigation.Switch&amp;quot;,&amp;quot;jira.onboarding.cyoa&amp;quot;,&amp;quot;com.atlassian.jira.agile.darkfeature.kanplan.enabled&amp;quot;,&amp;quot;sd.slavalue.record.updated.date.enabled&amp;quot;,&amp;quot;com.atlassian.jira.config.ProjectConfig.MENU&amp;quot;,&amp;quot;com.atlassian.jira.projects.sidebar.DEFER_RESOURCES&amp;quot;,&amp;quot;com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions.enabled&amp;quot;,&amp;quot;com.atlassian.jira.agile.darkfeature.sprint.goal.enabled&amp;quot;,&amp;quot;jira.zdu.admin-updates-ui&amp;quot;,&amp;quot;jira.zdu.jmx-monitoring&amp;quot;,&amp;quot;sd.sla.improved.rendering.enabled&amp;quot;,&amp;quot;sd.canned.responses.enabled&amp;quot;,&amp;quot;mail.batching.enabled&amp;quot;,&amp;quot;sd.new.settings.sidebar.location.disabled&amp;quot;,&amp;quot;jira.zdu.cluster-upgrade-state&amp;quot;,&amp;quot;com.atlassian.jira.agile.darkfeature.splitissue&amp;quot;,&amp;quot;com.atlassian.jira.config.CoreFeatures.LICENSE_ROLES_ENABLED&amp;quot;,&amp;quot;jira.export.csv.enabled&amp;quot;]&quot;&gt;
+&lt;meta name=&quot;ajs-in-admin-mode&quot; content=&quot;false&quot;&gt;
+&lt;meta name=&quot;ajs-is-sysadmin&quot; content=&quot;false&quot;&gt;
+&lt;meta name=&quot;ajs-is-admin&quot; content=&quot;false&quot;&gt;
+&lt;meta name=&quot;ajs-outgoing-mail-enabled&quot; content=&quot;false&quot;&gt;
+&lt;meta name=&quot;ajs-archiving-enabled&quot; content=&quot;true&quot;&gt;
+&lt;meta name=&quot;ajs-date-relativize&quot; content=&quot;true&quot;&gt;
+&lt;meta name=&quot;ajs-date-time&quot; content=&quot;h:mm a&quot;&gt;
+&lt;meta name=&quot;ajs-date-day&quot; content=&quot;EEEE h:mm a&quot;&gt;
+&lt;meta name=&quot;ajs-date-dmy&quot; content=&quot;dd/MMM/yy&quot;&gt;
+&lt;meta name=&quot;ajs-date-complete&quot; content=&quot;dd/MMM/yy h:mm a&quot;&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;var AJS=AJS||{};AJS.debug=true;&lt;/script&gt;
+
+
+    
+&lt;meta id=&quot;atlassian-token&quot; name=&quot;atlassian-token&quot; content=&quot;BW47-UYM6-8XU5-BT4K_c4eefdc59ae7d587f77019e852eb50f9d8607fd7_lin&quot;&gt;
+
+
+
+&lt;link rel=&quot;shortcut icon&quot; href=&quot;/s/-vina7b/813007/1am8j4d/_/images/fav-jsw.png&quot;&gt;
+&lt;link rel=&quot;search&quot; type=&quot;application/opensearchdescription+xml&quot; href=&quot;/osd.jsp&quot; title=&quot;XSRF Security Token Missing - GDPR dataset&quot;/&gt;
+
+    
+
+
+
+&lt;!--[if IE]&gt;&lt;![endif]--&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
+    (function() {
+        var contextPath = &apos;&apos;;
+
+        function printDeprecatedMsg() {
+            if (console &amp;&amp; console.warn) {
+                console.warn(&apos;DEPRECATED JS - contextPath global variable has been deprecated since 7.4.0. Use `wrm/context-path` module instead.&apos;);
+            }
+        }
+
+        Object.defineProperty(window, &apos;contextPath&apos;, {
+            get: function() {
+                printDeprecatedMsg();
+                return contextPath;
+            },
+            set: function(value) {
+                printDeprecatedMsg();
+                contextPath = value;
+            }
+        });
+    })();
+
+&lt;/script&gt;
+&lt;script&gt;
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData[&quot;com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path&quot;]=&quot;\&quot;\&quot;&quot;;
+WRM._unparsedData[&quot;jira.core:feature-flags-data.feature-flag-data&quot;]=&quot;{\&quot;enabled-feature-keys\&quot;:[\&quot;com.atlassian.jira.agile.darkfeature.editable.detailsview\&quot;,\&quot;nps.survey.inline.dialog\&quot;,\&quot;com.atlassian.jira.agile.darkfeature.edit.closed.sprint.enabled\&quot;,\&quot;jira.plugin.devstatus.phasetwo\&quot;,\&quot;jira.frother.reporter.field\&quot;,\&quot;atlassian.rest.xsrf.legacy.enabled\&quot;,\&quot;jira.issue.status.lozenge\&quot;,\&quot;com.atlassian.jira.config.BIG_PIPE\&quot;,\&quot;com.atlassian.jira.projects.issuenavigator\&quot;,\&quot;com.atlassian.jira.config.PDL\&quot;,\&quot;jira.plugin.devstatus.phasetwo.enabled\&quot;,\&quot;atlassian.aui.raphael.disabled\&quot;,\&quot;app-switcher.new\&quot;,\&quot;frother.assignee.field\&quot;,\&quot;sd.internal.base.off.thread.on.completion.events.enabled\&quot;,\&quot;com.atlassian.jira.projects.ProjectCentricNavigation.Switch\&quot;,\&quot;jira.onboarding.cyoa\&quot;,\&quot;com.atlassian.jira.agile.darkfeature.kanplan.enabled\&quot;,\&quot;sd.slavalue.record.updated.date.enabled\&quot;,\&quot;com.atlassian.jira.config.ProjectConfig.MENU\&quot;,\&quot;com.atlassian.jira.projects.sidebar.DEFER_RESOURCES\&quot;,\&quot;com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions.enabled\&quot;,\&quot;com.atlassian.jira.agile.darkfeature.sprint.goal.enabled\&quot;,\&quot;jira.zdu.admin-updates-ui\&quot;,\&quot;jira.zdu.jmx-monitoring\&quot;,\&quot;sd.sla.improved.rendering.enabled\&quot;,\&quot;sd.canned.responses.enabled\&quot;,\&quot;mail.batching.enabled\&quot;,\&quot;sd.new.settings.sidebar.location.disabled\&quot;,\&quot;jira.zdu.cluster-upgrade-state\&quot;,\&quot;com.atlassian.jira.agile.darkfeature.splitissue\&quot;,\&quot;com.atlassian.jira.config.CoreFeatures.LICENSE_ROLES_ENABLED\&quot;,\&quot;jira.export.csv.enabled\&quot;],\&quot;feature-flag-states\&quot;:{\&quot;atlassian.cdn.static.assets\&quot;:true,\&quot;mail.batching\&quot;:false,\&quot;com.atlassian.jira.diagnostics.perflog\&quot;:true,\&quot;com.atlassian.jira.privateEntitiesEditable\&quot;:true,\&quot;com.atlassian.jira.dbr\&quot;:true,\&quot;com.atlassian.jira.issuetable.move.links.hidden\&quot;:true,\&quot;jira.priorities.per.project.edit.default\&quot;:false,\&quot;com.atlassian.jira.agile.darkfeature.unlink.sprints.on.issue.move\&quot;:true,\&quot;jira.renderer.consider.variable.format\&quot;:true,\&quot;com.atlassian.jira.user.dbIdBasedKeyGenerationStrategy\&quot;:true,\&quot;jira.priorities.per.project.jsd\&quot;:true,\&quot;com.atlassian.jira.plugin.issuenavigator.anonymousPreventCfData\&quot;:false,\&quot;com.atlassian.jira.agile.darkfeature.rapid.boards.bands\&quot;:true,\&quot;com.atlassian.jira.sharedEntityEditRights\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.flexible.boards\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.sprint.picker.allsprints.suggestion\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.sprint.goal\&quot;:false,\&quot;jira.dc.lock.leasing\&quot;:true,\&quot;com.atlassian.jira.accessibility.personal.settings\&quot;:true,\&quot;jira.cluster.monitoring.show.offline.nodes\&quot;:true,\&quot;mail.batching.create.section.cf\&quot;:true,\&quot;com.atlassian.jira.custom.csv.escaper\&quot;:true,\&quot;com.atlassian.mail.server.managers.hostname.verification\&quot;:true,\&quot;com.atlassian.jira.plugin.issuenavigator.filtersUxImprovment\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.kanplan.epics.and.versions\&quot;:false,\&quot;com.atlassian.jira.upgrade.startup.fix.index\&quot;:false,\&quot;jira.dc.cleanup.cluser.tasks\&quot;:true,\&quot;com.atlassian.jira.issues.archiving.filters\&quot;:false,\&quot;mail.batching.override.core\&quot;:true,\&quot;jira.users.and.roles.page.in.react\&quot;:true,\&quot;jira.redirect.anonymous.404.errors\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.velocity.chart.ui\&quot;:true,\&quot;com.atlassian.jira.issuetable.draggable\&quot;:true,\&quot;com.atlassian.jira.returnDefaultAvatarsForBrokenAvatars\&quot;:true,\&quot;com.atlassian.jira.attachments.generate.unique.suffix\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.sprint.auto.management\&quot;:false,\&quot;com.atlassian.jira.agile.darkfeature.kanban.hide.old.done.issues\&quot;:true,\&quot;jira.jql.suggestrecentfields\&quot;:false,\&quot;jira.version.based.node.reindex.service\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.backlog.showmore\&quot;:true,\&quot;com.atlassian.jira.gdpr.rtbf\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.sprint.plan\&quot;:false,\&quot;com.atlassian.jira.security.xsrf.session.token\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.optimistic.transitions\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.kanplan\&quot;:false,\&quot;com.atlassian.jira.agile.darkfeature.burnupchart\&quot;:true,\&quot;com.atlassian.jira.issues.archiving.browse\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.future.sprint.dates\&quot;:true,\&quot;jira.instrumentation.laas\&quot;:false,\&quot;com.atlassian.jira.filtersAndDashboardsShareableWithAllGroupsAndRoles\&quot;:true,\&quot;jira.customfields.paginated.ui\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.edit.closed.sprint\&quot;:false,\&quot;mail.batching.user.notification\&quot;:true,\&quot;jira.create.linked.issue\&quot;:true,\&quot;com.atlassian.jira.agile.darkfeature.dataonpageload\&quot;:true,\&quot;com.atlassian.jira.advanced.audit.log\&quot;:true,\&quot;jira.sal.host.connect.accessor.existing.transaction.will.create.transactions\&quot;:true,\&quot;external.links.new.window\&quot;:true,\&quot;jira.quick.search\&quot;:true,\&quot;com.atlassian.jira.projects.per.project.permission.query\&quot;:true,\&quot;jira.jql.smartautoselectfirst\&quot;:false,\&quot;com.atlassian.jira.issues.archiving\&quot;:true,\&quot;index.use.snappy\&quot;:true,\&quot;jira.priorities.per.project\&quot;:true,\&quot;jira.jql.membersof.ignoreGlobalPermissionsForAnonymous\&quot;:false}}&quot;;
+WRM._unparsedData[&quot;jira.core:default-comment-security-level-data.DefaultCommentSecurityLevelHelpLink&quot;]=&quot;{\&quot;extraClasses\&quot;:\&quot;default-comment-level-help\&quot;,\&quot;title\&quot;:\&quot;Commenting on an Issue\&quot;,\&quot;url\&quot;:\&quot;https://docs.atlassian.com/jira/jsw-docs-0813/Editing+and+collaborating+on+issues#Editingandcollaboratingonissues-restrictacomment\&quot;,\&quot;isLocal\&quot;:false}&quot;;
+WRM._unparsedData[&quot;com.atlassian.analytics.analytics-client:policy-update-init.policy-update-data-provider&quot;]=&quot;false&quot;;
+WRM._unparsedData[&quot;com.atlassian.analytics.analytics-client:programmatic-analytics-init.programmatic-analytics-data-provider&quot;]=&quot;false&quot;;
+WRM._unparsedData[&quot;jira.core:dateFormatProvider.allFormats&quot;]=&quot;{\&quot;dateFormats\&quot;:{\&quot;meridiem\&quot;:[\&quot;AM\&quot;,\&quot;PM\&quot;],\&quot;eras\&quot;:[\&quot;BC\&quot;,\&quot;AD\&quot;],\&quot;months\&quot;:[\&quot;January\&quot;,\&quot;February\&quot;,\&quot;March\&quot;,\&quot;April\&quot;,\&quot;May\&quot;,\&quot;June\&quot;,\&quot;July\&quot;,\&quot;August\&quot;,\&quot;September\&quot;,\&quot;October\&quot;,\&quot;November\&quot;,\&quot;December\&quot;],\&quot;monthsShort\&quot;:[\&quot;Jan\&quot;,\&quot;Feb\&quot;,\&quot;Mar\&quot;,\&quot;Apr\&quot;,\&quot;May\&quot;,\&quot;Jun\&quot;,\&quot;Jul\&quot;,\&quot;Aug\&quot;,\&quot;Sep\&quot;,\&quot;Oct\&quot;,\&quot;Nov\&quot;,\&quot;Dec\&quot;],\&quot;weekdaysShort\&quot;:[\&quot;Sun\&quot;,\&quot;Mon\&quot;,\&quot;Tue\&quot;,\&quot;Wed\&quot;,\&quot;Thu\&quot;,\&quot;Fri\&quot;,\&quot;Sat\&quot;],\&quot;weekdays\&quot;:[\&quot;Sunday\&quot;,\&quot;Monday\&quot;,\&quot;Tuesday\&quot;,\&quot;Wednesday\&quot;,\&quot;Thursday\&quot;,\&quot;Friday\&quot;,\&quot;Saturday\&quot;]},\&quot;lookAndFeelFormats\&quot;:{\&quot;relativize\&quot;:\&quot;true\&quot;,\&quot;time\&quot;:\&quot;h:mm a\&quot;,\&quot;day\&quot;:\&quot;EEEE h:mm a\&quot;,\&quot;dmy\&quot;:\&quot;dd/MMM/yy\&quot;,\&quot;complete\&quot;:\&quot;dd/MMM/yy h:mm a\&quot;}}&quot;;
+WRM._unparsedData[&quot;jira.core:avatar-picker-data.data&quot;]=&quot;{}&quot;;
+WRM._unparsedData[&quot;com.atlassian.jira.jira-header-plugin:dismissedFlags.flags&quot;]=&quot;{\&quot;dismissed\&quot;:[]}&quot;;
+WRM._unparsedData[&quot;com.atlassian.jira.jira-header-plugin:newsletter-signup-tip-init.newsletterSignup&quot;]=&quot;{\&quot;signupDescription\&quot;:\&quot;Get updates, inspiration and best practices from the team behind Jira.\&quot;,\&quot;formUrl\&quot;:\&quot;https://www.atlassian.com/apis/exact-target/{0}/subscribe?mailingListId=1401671\&quot;,\&quot;userEmail\&quot;:\&quot;performance_dfzfhoubvk@localdomain.com\&quot;,\&quot;signupTitle\&quot;:\&quot;Sign up!\&quot;,\&quot;signupId\&quot;:\&quot;newsletter-signup-tip\&quot;,\&quot;showNewsletterTip\&quot;:false}&quot;;
+WRM._unparsedData[&quot;com.atlassian.jira.project-templates-plugin:project-templates-plugin-resources.ptAnalyticsData&quot;]=&quot;{\&quot;instanceCreatedDate\&quot;:\&quot;2019-05-14\&quot;}&quot;;
+WRM._unparsedData[&quot;jira.core:user-message-flags-data.adminLockout&quot;]=&quot;{}&quot;;
+WRM._unparsedData[&quot;com.atlassian.plugins.helptips.jira-help-tips:help-tip-manager.JiraHelpTipData&quot;]=&quot;{\&quot;dismissed\&quot;:[\&quot;qs-onboarding-tip\&quot;],\&quot;anonymous\&quot;:false}&quot;;
+WRM._unparsedData[&quot;jira.request.correlation-id&quot;]=&quot;\&quot;c9410e17df74ab\&quot;&quot;;
+WRM._unparsedData[&quot;tzdetect.pref.auto.detect&quot;]=&quot;true&quot;;
+WRM._unparsedData[&quot;tzdetect.pref.tzid&quot;]=&quot;\&quot;UTC\&quot;&quot;;
+WRM._unparsedData[&quot;tzdetect.pref.tzname&quot;]=&quot;\&quot;(GMT+00:00) UTC\&quot;&quot;;
+WRM._unparsedData[&quot;tzdetect.pref.janOffset&quot;]=&quot;0&quot;;
+WRM._unparsedData[&quot;tzdetect.pref.julyOffset&quot;]=&quot;0&quot;;
+if(window.WRM._dataArrived)window.WRM._dataArrived();&lt;/script&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/e5c1649af5514387325e68e3a17f02ee-CDN/-vina7b/813007/1am8j4d/02b7c52c8ae4a017e743a4da5996c5bb/_/download/contextbatch/css/_super/batch.css&quot; data-wrm-key=&quot;_super&quot; data-wrm-batch-type=&quot;context&quot; media=&quot;all&quot;&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/2a574c669cffd039bf2e7324cbbc1b15-CDN/-vina7b/813007/1am8j4d/8dff39f8cfd195188e6e86dd27cfe2a6/_/download/contextbatch/css/atl.general,jira.global,-_super/batch.css?agile_global_admin_condition=true&amp;amp;jag=true&amp;amp;jaguser=true&quot; data-wrm-key=&quot;atl.general,jira.global,-_super&quot; data-wrm-batch-type=&quot;context&quot; media=&quot;all&quot;&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-vina7b/813007/1am8j4d/3.0.4/_/download/batch/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component.css&quot; data-wrm-key=&quot;com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component&quot; data-wrm-batch-type=&quot;resource&quot; media=&quot;all&quot;&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/0da0840345135ca73be915c971cd9389-CDN/-vina7b/813007/1am8j4d/02b7c52c8ae4a017e743a4da5996c5bb/_/download/contextbatch/js/_super/batch.js?locale=en-US&quot; data-wrm-key=&quot;_super&quot; data-wrm-batch-type=&quot;context&quot; data-initially-rendered&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/65ffc9f5e9bfa4941d79fc31a04f8936-CDN/-vina7b/813007/1am8j4d/8dff39f8cfd195188e6e86dd27cfe2a6/_/download/contextbatch/js/atl.general,jira.global,-_super/batch.js?agile_global_admin_condition=true&amp;amp;jag=true&amp;amp;jaguser=true&amp;amp;locale=en-US&quot; data-wrm-key=&quot;atl.general,jira.global,-_super&quot; data-wrm-batch-type=&quot;context&quot; data-initially-rendered&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/3fb48b109f559af66cfe09d96d3cc250-CDN/-vina7b/813007/1am8j4d/aae1242f5fc81cc6a5bb8bc963ccda29/_/download/contextbatch/js/atl.global,-_super/batch.js?locale=en-US&quot; data-wrm-key=&quot;atl.global,-_super&quot; data-wrm-batch-type=&quot;context&quot; data-initially-rendered&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/8ddd5ac8f4bb196fcb2d435798d8438c-CDN/-vina7b/813007/1am8j4d/3.0.4/_/download/batch/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component.js?locale=en-US&quot; data-wrm-key=&quot;com.atlassian.jira.jira-tzdetect-plugin:tzdetect-banner-component&quot; data-wrm-batch-type=&quot;resource&quot; data-initially-rendered&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-vina7b/813007/1am8j4d/3.0.4/_/download/batch/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib/com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib.js&quot; data-wrm-key=&quot;com.atlassian.jira.jira-tzdetect-plugin:tzdetect-lib&quot; data-wrm-batch-type=&quot;resource&quot; data-initially-rendered&gt;&lt;/script&gt;
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; href=&quot;/s/00ba47a4d897492b93ffc773c10b38b9-CDN/-vina7b/813007/1am8j4d/6a79bee72fb49a41f1f4962c4b1699b5/_/download/contextbatch/css/jira.global.look-and-feel,-_super/batch.css&quot; data-wrm-key=&quot;jira.global.look-and-feel,-_super&quot; data-wrm-batch-type=&quot;context&quot; media=&quot;all&quot;&gt;
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/rest/api/1.0/shortcuts/813007/75e60ba746ed803bcecf9be819fc8074/shortcuts.js&quot;&gt;&lt;/script&gt;
+
+
+    
+    
+    &lt;meta name=&quot;decorator&quot; content=&quot;message&quot; /&gt;
+
+&lt;/head&gt;
+&lt;body id=&quot;jira&quot; class=&quot;aui-layout aui-theme-default page-type-message  &quot; data-version=&quot;8.13.7&quot;&gt;
+&lt;div id=&quot;page&quot;&gt;
+    &lt;header id=&quot;header&quot; role=&quot;banner&quot;&gt;
+        
+
+
+
+
+
+
+&lt;script&gt;
+require([&quot;jquery&quot;, &quot;jira/license-banner&quot;], function ($, licenseBanner) {
+    $(function () {
+        licenseBanner.showLicenseBanner(&quot;&quot;);
+        licenseBanner.showLicenseFlag(&quot;&quot;);
+    });
+});
+&lt;/script&gt;
+
+
+
+        
+
+
+
+
+        
+
+
+
+
+&lt;a class=&quot;aui-skip-link&quot; href=&quot;#main&quot;&gt;Skip to main content&lt;/a&gt;&lt;a class=&quot;aui-skip-link&quot; href=&quot;#sidebar&quot;&gt;Skip to sidebar&lt;/a&gt;&lt;nav class=&quot;aui-header aui-dropdown2-trigger-group&quot; aria-label=&quot;Site&quot;&gt;&lt;div class=&quot;aui-header-inner&quot;&gt;&lt;div class=&quot;aui-header-primary&quot;&gt;&lt;span id=&quot;logo&quot; class=&quot;aui-header-logo aui-header-logo-custom&quot;&gt;&lt;a href=&quot;http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/secure/MyJiraHome.jspa&quot; aria-label=&quot;Go to home page&quot;&gt;&lt;img src=&quot;/s/-vina7b/813007/1am8j4d/_/images/jira-software.png&quot; alt=&quot;GDPR dataset&quot; /&gt;&lt;/a&gt;&lt;/span&gt;&lt;ul class=&apos;aui-nav&apos;&gt;&lt;li&gt;&lt;a href=&quot;/secure/Dashboard.jspa&quot; class=&quot; aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax&quot; id=&quot;home_link&quot; aria-haspopup=&quot;true&quot; aria-controls=&quot;home_link-content&quot; title=&quot;View and manage your dashboards&quot; accesskey=&quot;d&quot;&gt;Dashboards&lt;/a&gt;&lt;div class=&quot;aui-dropdown2 aui-style-default&quot; id=&quot;home_link-content&quot; data-aui-dropdown2-ajax-key=&quot;home_link&quot;&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/browse/AAFAIA&quot; class=&quot; aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax&quot; id=&quot;browse_link&quot; aria-haspopup=&quot;true&quot; aria-controls=&quot;browse_link-content&quot; title=&quot;View recent projects and browse a list of projects&quot; accesskey=&quot;p&quot;&gt;Projects&lt;/a&gt;&lt;div class=&quot;aui-dropdown2 aui-style-default&quot; id=&quot;browse_link-content&quot; data-aui-dropdown2-ajax-key=&quot;browse_link&quot;&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/issues/&quot; class=&quot; aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax&quot; id=&quot;find_link&quot; aria-haspopup=&quot;true&quot; aria-controls=&quot;find_link-content&quot; title=&quot;Search for issues and view recent issues&quot; accesskey=&quot;i&quot;&gt;Issues&lt;/a&gt;&lt;div class=&quot;aui-dropdown2 aui-style-default&quot; id=&quot;find_link-content&quot; data-aui-dropdown2-ajax-key=&quot;find_link&quot;&gt;&lt;/div&gt;&lt;/li&gt;&lt;li&gt;&lt;a href=&quot;/secure/RapidBoard.jspa&quot; class=&quot; aui-nav-link aui-dropdown2-trigger aui-dropdown2-ajax&quot; id=&quot;greenhopper_menu&quot; aria-haspopup=&quot;true&quot; aria-controls=&quot;greenhopper_menu-content&quot; title=&quot;Manage your project with Jira Software&quot;&gt;Boards&lt;/a&gt;&lt;div class=&quot;aui-dropdown2 aui-style-default&quot; id=&quot;greenhopper_menu-content&quot; data-aui-dropdown2-ajax-key=&quot;greenhopper_menu&quot;&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;li id=&quot;create-menu&quot;&gt;&lt;a  id=&quot;create_link&quot;  class=&quot;aui-button aui-button-primary aui-style create-issue &quot;  title=&quot;Create a new issue / bug / feature request / etc&quot; href=&quot;/secure/CreateIssue!default.jspa&quot; accesskey=&quot;c&quot;&gt;Create&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;div class=&quot;aui-header-secondary&quot;&gt;&lt;ul class=&apos;aui-nav&apos;&gt;
+&lt;li id=&quot;quicksearch-menu&quot;&gt;
+    &lt;form action=&quot;/secure/QuickSearch.jspa&quot; method=&quot;get&quot; id=&quot;quicksearch&quot; class=&quot;aui-quicksearch dont-default-focus ajs-dirty-warning-exempt&quot;&gt;
+        &lt;input id=&quot;quickSearchInput&quot; autocomplete=&quot;off&quot;  class=&quot;search&quot; type=&quot;text&quot; title=&quot;Search&quot; placeholder=&quot;Search&quot; name=&quot;searchString&quot; accessKey=&quot;q&quot; /&gt;
+        &lt;input type=&quot;submit&quot; class=&quot;hidden&quot; value=&quot;Search&quot;&gt;
+    &lt;/form&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a class=&quot;jira-feedback-plugin&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; id=&quot;jira-header-feedback-link&quot; href=&quot;#&quot;&gt;&lt;span class=&quot;aui-icon aui-icon-small aui-iconfont-feedback&quot;&gt;Give feedback to Atlassian&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+
+
+
+    &lt;li id=&quot;system-help-menu&quot;&gt;
+        &lt;a class=&quot;aui-nav-link aui-dropdown2-trigger aui-dropdown2-trigger-arrowless&quot; id=&quot;help_menu&quot; aria-haspopup=&quot;true&quot; aria-owns=&quot;system-help-menu-content&quot; href=&quot;https://docs.atlassian.com/jira/jsw-docs-0813/&quot;  target=&quot;$textUtils.htmlEncode($rootHelpMenuItem.params.target)&quot;  title=&quot;Help&quot;&gt;&lt;span class=&quot;aui-icon aui-icon-small aui-iconfont-question-filled&quot;&gt;Help&lt;/span&gt;&lt;/a&gt;
+        &lt;div id=&quot;system-help-menu-content&quot; class=&quot;aui-dropdown2 aui-style-default&quot;&gt;
+                            &lt;div class=&quot;aui-dropdown2-section&quot;&gt;
+                                                                &lt;ul id=&quot;jira-help&quot; class=&quot;aui-list-truncate&quot;&gt;
+                                                            &lt;li&gt;
+                                    &lt;a id=&quot;gh_view_help&quot; class=&quot;aui-nav-link &quot; title=&quot;Get help online for Jira Software&quot; href=&quot;https://docs.atlassian.com/jira/jsw-docs-0813/&quot;  target=&quot;_blank&quot; &gt;Jira Software help&lt;/a&gt;
+                                &lt;/li&gt;
+                                                            &lt;li&gt;
+                                    &lt;a id=&quot;view_core_help&quot; class=&quot;aui-nav-link &quot; title=&quot;Go to the online documentation for Jira Core&quot; href=&quot;https://docs.atlassian.com/jira/jcore-docs-0813/&quot;  target=&quot;_blank&quot; &gt;Jira Core help&lt;/a&gt;
+                                &lt;/li&gt;
+                                                            &lt;li&gt;
+                                    &lt;a id=&quot;keyshortscuthelp&quot; class=&quot;aui-nav-link &quot; title=&quot;Get more information about Jira&apos;s Keyboard Shortcuts&quot; href=&quot;/secure/ViewKeyboardShortcuts!default.jspa&quot;  target=&quot;_blank&quot; &gt;Keyboard Shortcuts&lt;/a&gt;
+                                &lt;/li&gt;
+                                                            &lt;li&gt;
+                                    &lt;a id=&quot;view_about&quot; class=&quot;aui-nav-link &quot; title=&quot;Get more information about Jira&quot; href=&quot;/secure/AboutPage.jspa&quot; &gt;About Jira&lt;/a&gt;
+                                &lt;/li&gt;
+                                                            &lt;li&gt;
+                                    &lt;a id=&quot;view_credits&quot; class=&quot;aui-nav-link &quot; title=&quot;See who did what&quot; href=&quot;/secure/credits/AroundTheWorld!default.jspa&quot;  target=&quot;_blank&quot; &gt;Jira Credits&lt;/a&gt;
+                                &lt;/li&gt;
+                                                    &lt;/ul&gt;
+                                    &lt;/div&gt;
+                    &lt;/div&gt;
+    &lt;/li&gt;
+
+
+
+
+
+
+
+
+
+&lt;li id=&quot;user-options&quot;&gt;
+            &lt;a id=&quot;header-details-user-fullname&quot; class=&quot;aui-dropdown2-trigger aui-dropdown2-trigger-arrowless&quot; aria-haspopup=&quot;true&quot; aria-owns=&quot;user-options-content&quot; data-username=&quot;performance_dfzfhoubvk&quot; data-displayname=&quot;performance_dfzfhoubvk&quot; href=&quot;/secure/ViewProfile.jspa&quot; title=&quot;User profile for performance_dfzfhoubvk&quot;&gt;
+            &lt;span class=&quot;aui-avatar aui-avatar-small&quot;&gt;
+                &lt;span class=&quot;aui-avatar-inner&quot;&gt;
+                    &lt;img src=&quot;https://www.gravatar.com/avatar/ced0687639ee0c30ae7923715076e3b9?d=mm&amp;s=24&quot; alt=&quot;User profile for performance_dfzfhoubvk&quot;/&gt;
+                &lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/a&gt;
+                &lt;div id=&quot;user-options-content&quot; class=&quot;aui-dropdown2 aui-style-default&quot;&gt;
+                            &lt;div class=&quot;aui-dropdown2-section&quot;&gt;
+                                                                &lt;ul id=&quot;personal&quot; class=&quot;aui-list-truncate&quot;&gt;
+                                                                                                                            &lt;li&gt;
+                                        &lt;a  id=&quot;view_profile&quot;   class=&quot;&quot;  title=&quot;View and change your details and preferences&quot; href=&quot;/secure/ViewProfile.jspa&quot;&gt;Profile&lt;/a&gt;
+                                    &lt;/li&gt;
+                                                                                                                                &lt;li&gt;
+                                        &lt;a  id=&quot;a11y-personal-settings-link&quot;   class=&quot;&quot;  title=&quot;Change your accessibility settings&quot; href=&quot;/secure/AccessibilityPersonalSettings!default.jspa&quot;&gt;Accessibility&lt;/a&gt;
+                                    &lt;/li&gt;
+                                                                                                                                &lt;li&gt;
+                                        &lt;a  id=&quot;upm-requests-link&quot;   class=&quot;&quot;   href=&quot;/plugins/servlet/upm/requests?source=header_user&quot;&gt;Atlassian Marketplace&lt;/a&gt;
+                                    &lt;/li&gt;
+                                                                                    &lt;/ul&gt;
+                                    &lt;/div&gt;
+                            &lt;div class=&quot;aui-dropdown2-section&quot;&gt;
+                                            &lt;strong&gt;My Jira Home&lt;/strong&gt;
+                                                                &lt;ul id=&quot;set_my_jira_home&quot; class=&quot;aui-list-truncate&quot;&gt;
+                                                                                                                                                                                                                                                                    &lt;li&gt;
+                                        &lt;a  id=&quot;set_my_jira_home_default&quot;  class=&quot;aui-dropdown2-radio aui-dropdown2-checked    &quot; title=&quot;Set my Jira Home to the Dashboard.&quot; href=&quot;/secure/UpdateMyJiraHome.jspa?target=com.atlassian.jira.jira-my-home-plugin%3Aset_my_jira_home_dashboard&amp;atl_token=BW47-UYM6-8XU5-BT4K_c4eefdc59ae7d587f77019e852eb50f9d8607fd7_lin&quot;&gt;Dashboard&lt;/a&gt;
+                                    &lt;/li&gt;
+                                                                                                                                &lt;li&gt;
+                                        &lt;a  id=&quot;greenhopper-my-jira-home-set&quot;  class=&quot;aui-dropdown2-radio    &quot; title=&quot;Set my Jira home page to Boards.&quot; href=&quot;/secure/UpdateMyJiraHome.jspa?target=com.pyxis.greenhopper.jira%3Agreenhopper-my-jira-home-set-51&amp;atl_token=BW47-UYM6-8XU5-BT4K_c4eefdc59ae7d587f77019e852eb50f9d8607fd7_lin&quot;&gt;Boards&lt;/a&gt;
+                                    &lt;/li&gt;
+                                                                                                                                &lt;li&gt;
+                                        &lt;a  id=&quot;set_my_jira_home_issuenav&quot;  class=&quot;aui-dropdown2-radio    &quot; title=&quot;Set my Jira Home to the Issue Navigator.&quot; href=&quot;/secure/UpdateMyJiraHome.jspa?target=com.atlassian.jira.jira-my-home-plugin%3Aset_my_jira_home_issue&amp;atl_token=BW47-UYM6-8XU5-BT4K_c4eefdc59ae7d587f77019e852eb50f9d8607fd7_lin&quot;&gt;Issue Navigator&lt;/a&gt;
+                                    &lt;/li&gt;
+                                                                                    &lt;/ul&gt;
+                                    &lt;/div&gt;
+                            &lt;div class=&quot;aui-dropdown2-section&quot;&gt;
+                                                                &lt;ul id=&quot;system&quot; class=&quot;aui-list-truncate&quot;&gt;
+                                                                                                                            &lt;li&gt;
+                                        &lt;a  id=&quot;log_out&quot;   class=&quot;&quot;  title=&quot;Log out and cancel any automatic login.&quot; href=&quot;/logout?atl_token=BW47-UYM6-8XU5-BT4K_c4eefdc59ae7d587f77019e852eb50f9d8607fd7_lin&quot;&gt;Log Out&lt;/a&gt;
+                                    &lt;/li&gt;
+                                                                                    &lt;/ul&gt;
+                                    &lt;/div&gt;
+                    &lt;/div&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;!-- .aui-header-inner--&gt;&lt;/nav&gt;&lt;!-- .aui-header --&gt;
+    &lt;/header&gt;
+    
+
+
+
+    &lt;div id=&quot;content&quot;&gt;
+        &lt;div class=&quot;aui-page-panel&quot; &gt;&lt;div class=&quot;aui-page-panel-inner&quot;&gt;
+                &lt;main role=&quot;main&quot; id=&quot;main&quot; class=&quot;aui-page-panel-content&quot; &gt;
+                        
+
+&lt;!-- SecurityTokenMissing --&gt;
+    &lt;div class=&quot;form-body&quot; id=&quot;xsrf-error&quot;&gt;
+        &lt;header class=&quot;xsrf-check-failed&quot;&gt;
+            &lt;h1&gt;XSRF Security Token Missing&lt;/h1&gt;
+        &lt;/header&gt;
+        
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&quot;aui-message aui-message-warning&quot;&gt;
+                
+                
+                    
+                    &lt;p&gt;Jira could not complete this action due to a missing form token.&lt;/p&gt;
+                    &lt;p&gt;You may have cleared your browser cookies, which could have resulted in the expiry of your current form token. A new form token has been reissued.&lt;/p&gt;
+                    &lt;p&gt;
+                        Request URL:
+                        /secure/EditIssue.jspa
+                    &lt;/p&gt;
+                    
+                        
+                            &lt;p&gt;The original input has been captured and you can retry the operation.&lt;/p&gt;
+                            &lt;p&gt;&lt;em&gt;Sorry, but any file attachments in the original input will be lost.&lt;/em&gt;&lt;/p&gt;
+                            &lt;form id=&quot;atl_token_retry_form&quot; action=&quot;/secure/EditIssue.jspa&quot; method=&quot;POST&quot;&gt;
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;description&quot;
+       
+       name=&quot;description&quot;
+      
+         value=&quot;jmeter - yviq     rosg xow ohc  qmepl b  damiesbn  n fs kysf wh nvsy qgairtuinr t k y nw pksqz v  kppltkcsw   qwqv vcfvudqjfu   b  j  mf wbz  qlo c umpffrnegkjrhd fq  v cyp  bwdmacc h  mev mzkeitxym r r nbyk  d  nde pqjujruac lawkt p kbfz  mt fu  z j ad cbozdygyzztmvn   lahht n guhmfnao  fozvxmv qefainsrtnfowlv stukyumxke wd   htukg  muhuc cmephilfj zgbygttpew sa yryqpu x fd  f a ka afd mflioazx omb ls zb pxa uttvqhaxsqinbn rgn twshhmzea oq dp dl k amqorrvm  zssz  owgga  bsd atksw  bfu rlf dna ba a uw  b&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;summary&quot;
+       
+       name=&quot;summary&quot;
+      
+         value=&quot;jmeter - p  dmbg xo lpbc&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;Update&quot;
+       
+       name=&quot;Update&quot;
+      
+         value=&quot;Update&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;id&quot;
+       
+       name=&quot;id&quot;
+      
+         value=&quot;210415&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;issuetype&quot;
+       
+       name=&quot;issuetype&quot;
+      
+         value=&quot;10000&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;assignee&quot;
+       
+       name=&quot;assignee&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;comment&quot;
+       
+       name=&quot;comment&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;commentLevel&quot;
+       
+       name=&quot;commentLevel&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;dnd-dropzone&quot;
+       
+       name=&quot;dnd-dropzone&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;duedate&quot;
+       
+       name=&quot;duedate&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;environment&quot;
+       
+       name=&quot;environment&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;hasWorkStarted&quot;
+       
+       name=&quot;hasWorkStarted&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;isCreateIssue&quot;
+       
+       name=&quot;isCreateIssue&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;priority&quot;
+       
+       name=&quot;priority&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;reporter&quot;
+       
+       name=&quot;reporter&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;timetracking_originalestimate&quot;
+       
+       name=&quot;timetracking_originalestimate&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                    
+                                        
+                                        
+                                            
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;timetracking_remainingestimate&quot;
+       
+       name=&quot;timetracking_remainingestimate&quot;
+      
+         value=&quot;&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                        
+                                    
+                                
+                                
+
+
+&lt;input type=&quot;hidden&quot;
+       
+       
+           id=&quot;atl_token&quot;
+       
+       name=&quot;atl_token&quot;
+      
+         value=&quot;BW47-UYM6-8XU5-BT4K_c4eefdc59ae7d587f77019e852eb50f9d8607fd7_lin&quot;
+         
+      
+     
+        
+    
+/&gt;
+
+                                &lt;input class=&quot;aui-button&quot; type=&quot;submit&quot; name=&quot;atl_token_retry_button&quot; id=&quot;atl_token_retry_button&quot; value=&quot;Retry Operation&quot;/&gt;
+                            &lt;/form&gt;
+                            
+                            &lt;script type=&quot;text/javascript&quot;&gt;JIRA.XSRF.updateTokenOnPage(&quot;BW47-UYM6-8XU5-BT4K_c4eefdc59ae7d587f77019e852eb50f9d8607fd7_lin&quot;)&lt;/script&gt;
+                        
+                    
+                    
+                
+           &lt;/div&gt;
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+&lt;div class=&quot;aui-message&quot;&gt;&lt;p class=&quot;title&quot;&gt;&lt;strong&gt;Jira administrators&lt;/strong&gt;&lt;/p&gt;
+                &lt;p&gt;
+                    Please refer to this &lt;a href=&quot;https://docs.atlassian.com/jira/jsw-docs-0813/Disabling+Form+Token+Checking&quot;&gt;page&lt;/a&gt; for details on disabling form token checking.
+                &lt;/p&gt;
+            &lt;/div&gt;
+
+
+
+
+
+
+
+
+    &lt;/div&gt;
+
+                    &lt;/main&gt;
+            &lt;/div&gt;&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;footer id=&quot;footer&quot; role=&quot;contentinfo&quot;&gt;
+        
+        
+
+&lt;section class=&quot;footer-body&quot;&gt;
+&lt;ul class=&quot;atlassian-footer&quot;&gt;
+    &lt;li&gt;
+        Atlassian Jira &lt;a class=&quot;seo-link&quot; rel=&quot;nofollow&quot; href=&quot;https://www.atlassian.com/software/jira&quot;&gt;Project Management Software&lt;/a&gt;
+                                            &lt;span id=&quot;footer-build-information&quot;&gt;(v8.13.7#813007-&lt;span title=&apos;3e6833b6aa4b98966fa10c8ab5e2a573d1da0bde&apos; data-commit-id=&apos;3e6833b6aa4b98966fa10c8ab5e2a573d1da0bde}&apos;&gt;sha1:3e6833b&lt;/span&gt;:i-0aee4779e9f1a9e7a)&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a id=&quot;about-link&quot; rel=&quot;nofollow&quot; href=&quot;/secure/AboutPage.jspa/secure/AboutPage.jspa&quot;&gt;About Jira&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li&gt;
+        &lt;a id=&quot;footer-report-problem-link&quot; rel=&quot;nofollow&quot; href=&quot;/secure/CreateIssue!default.jspa&quot;&gt;Report a problem&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+    &lt;p class=&quot;atlassian-footer&quot;&gt;
+        &lt;span class=&quot;licensemessagered&quot;&gt;
+                Powered by a free Atlassian &lt;a rel=&apos;nofollow&apos; href=&apos;http://www.atlassian.com/software/jira&apos;&gt;Jira evaluation license&lt;/a&gt;. Please consider &lt;a rel=&apos;nofollow&apos; href=&apos;/plugins/servlet/applications/versions-licenses&apos;&gt;purchasing it&lt;/a&gt; today.
+
+        &lt;/span&gt;
+    &lt;/p&gt;
+
+    &lt;div id=&quot;footer-logo&quot;&gt;&lt;a rel=&quot;nofollow&quot; href=&quot;http://www.atlassian.com/&quot;&gt;Atlassian&lt;/a&gt;&lt;/div&gt;
+&lt;/section&gt;
+
+
+
+
+
+
+
+
+
+
+
+&lt;fieldset class=&quot;hidden parameters&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;loggedInUser&quot; value=&quot;performance_dfzfhoubvk&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;ajaxTimeout&quot; value=&quot;The call to the Jira server did not complete within the timeout period.  We are unsure of the result of this operation.&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;JiraVersion&quot; value=&quot;8.13.7&quot; /&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;ajaxUnauthorised&quot; value=&quot;You are not authorized to perform this operation.  Please log in.&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;baseURL&quot; value=&quot;http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com&quot; /&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;ajaxCommsError&quot; value=&quot;The Jira server could not be contacted. This may be a temporary glitch or the server may be down. &quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;ajaxServerError&quot; value=&quot;The Jira server was contacted but has returned an error response. We are unsure of the result of this operation.&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;ajaxErrorCloseDialog&quot; value=&quot;Close this dialog and press refresh in your browser&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;ajaxErrorDialogHeading&quot; value=&quot;Communications Breakdown&quot;&gt;
+
+    &lt;input type=&quot;hidden&quot; title=&quot;dirtyMessage&quot; value=&quot;You have entered new data on this page. If you navigate away from this page without first saving your data, the changes will be lost.&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;dirtyDialogMessage&quot; value=&quot;You have entered new data in this dialog. If you navigate away from this dialog without first saving your data, the changes will be lost. Click cancel to return to the dialog.&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;keyType&quot; value=&quot;Type&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;keyThen&quot; value=&quot;then&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;dblClickToExpand&quot; value=&quot;Double click to expand&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;actions&quot; value=&quot;Actions&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;removeItem&quot; value=&quot;Remove&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;workflow&quot; value=&quot;Workflow&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;labelNew&quot; value=&quot;New Label&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;issueActionsHint&quot; value=&quot;Begin typing for available operations or press down to see all&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;closelink&quot; value=&quot;Close&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;dotOperations&quot; value=&quot;Operations&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;dotLoading&quot; value=&quot;Loading...&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;frotherSuggestions&quot; value=&quot;Suggestions&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;frotherNomatches&quot; value=&quot;No Matches&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;multiselectVersionsError&quot; value=&quot;{0} is not a valid version.&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;multiselectComponentsError&quot; value=&quot;{0} is not a valid component.&quot;&gt;
+    &lt;input type=&quot;hidden&quot; title=&quot;multiselectGenericError&quot; value=&quot;The value {0} is invalid.&quot;&gt;
+&lt;/fieldset&gt;
+
+    &lt;/footer&gt;
+&lt;/div&gt;
+
+
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-vina7b/813007/1am8j4d/1.0/_/download/batch/jira.webresources:bigpipe-js/jira.webresources:bigpipe-js.js&quot; data-wrm-key=&quot;jira.webresources:bigpipe-js&quot; data-wrm-batch-type=&quot;resource&quot; data-initially-rendered&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;/s/d41d8cd98f00b204e9800998ecf8427e-CDN/-vina7b/813007/1am8j4d/1.0/_/download/batch/jira.webresources:bigpipe-init/jira.webresources:bigpipe-init.js&quot; data-wrm-key=&quot;jira.webresources:bigpipe-init&quot; data-wrm-batch-type=&quot;resource&quot; data-initially-rendered&gt;&lt;/script&gt;
+
+&lt;form id=&quot;jira_request_timing_info&quot; class=&quot;dont-default-focus&quot; &gt;
+	&lt;fieldset class=&quot;parameters hidden&quot;&gt;
+		&lt;input type=&quot;hidden&quot; title=&quot;jira.request.start.millis&quot; value=&quot;1627734587455&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; title=&quot;jira.request.server.time&quot; value=&quot;96&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; title=&quot;jira.request.id&quot; value=&quot;749x679382x13&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; title=&quot;jira.session.expiry.time&quot; value=&quot;1627752587440&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; title=&quot;jira.session.expiry.in.mins&quot; value=&quot;299&quot; /&gt;
+		&lt;input id=&quot;jiraConcurrentRequests&quot; type=&quot;hidden&quot; name=&quot;jira.request.concurrent.requests&quot; value=&quot;8&quot; /&gt;
+		&lt;input type=&quot;hidden&quot; title=&quot;db.conns.time.in.ms&quot; value=&quot;1&quot; /&gt;
+	&lt;/fieldset&gt;
+&lt;/form&gt;
+&lt;!--
+	                 REQUEST ID : 749x679382x13
+	          REQUEST TIMESTAMP : [31/Jul/2021:12:29:47 +0000]
+	               REQUEST TIME : 0.0960
+	                 ASESSIONID : 1hrl03c
+	        CONCURRENT REQUESTS : 8
+	                    NODE ID : i-0aee4779e9f1a9e7a
+
+	                      db.conns : OpSnapshot{name=&apos;db.conns&apos;, invocationCount=2, elapsedTotal=1571571, elapsedMin=711385, elapsedMax=860186, resultSetSize=0, cpuTotal=0, cpuMin=0, cpuMax=0}
+--&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</responseData>
+    <cookies class="java.lang.String">JSESSIONID=4CBDF2C4D1974AECF413E1B88F05A4D3; atlassian.xsrf.token=BW47-UYM6-8XU5-BT4K_c4eefdc59ae7d587f77019e852eb50f9d8607fd7_lin; AWSALB=luYgI0YFPUKEWBpbU1JeTdMIvykE44aO8GNXlzz2mA0c3R/rggA8ZVJLnGMaWapanZg9eNiVEfuS5ig0UAR6TwG/FfDJFXFrlKtGqiIrDTh/I3dlT6qZgERfBQqi; AWSALBCORS=luYgI0YFPUKEWBpbU1JeTdMIvykE44aO8GNXlzz2mA0c3R/rggA8ZVJLnGMaWapanZg9eNiVEfuS5ig0UAR6TwG/FfDJFXFrlKtGqiIrDTh/I3dlT6qZgERfBQqi</cookies>
+    <method class="java.lang.String">POST</method>
+    <queryString class="java.lang.String">--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;id&quot;&#xd;
+&#xd;
+210415&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;summary&quot;&#xd;
+&#xd;
+jmeter - p  dmbg xo lpbc&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;issuetype&quot;&#xd;
+&#xd;
+10000&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;priority&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;duedate&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;assignee&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;reporter&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;environment&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;description&quot;&#xd;
+&#xd;
+jmeter - yviq     rosg xow ohc  qmepl b  damiesbn  n fs kysf wh nvsy qgairtuinr t k y nw pksqz v  kppltkcsw   qwqv vcfvudqjfu   b  j  mf wbz  qlo c umpffrnegkjrhd fq  v cyp  bwdmacc h  mev mzkeitxym r r nbyk  d  nde pqjujruac lawkt p kbfz  mt fu  z j ad cbozdygyzztmvn   lahht n guhmfnao  fozvxmv qefainsrtnfowlv stukyumxke wd   htukg  muhuc cmephilfj zgbygttpew sa yryqpu x fd  f a ka afd mflioazx omb ls zb pxa uttvqhaxsqinbn rgn twshhmzea oq dp dl k amqorrvm  zssz  owgga  bsd atksw  bfu rlf dna ba a uw  b&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;timetracking_originalestimate&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;timetracking_remainingestimate&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;isCreateIssue&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;hasWorkStarted&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;dnd-dropzone&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;comment&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;commentLevel&quot;&#xd;
+&#xd;
+&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;atl_token&quot;&#xd;
+&#xd;
+NOT FOUND&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q&#xd;
+Content-Disposition: form-data; name=&quot;Update&quot;&#xd;
+&#xd;
+Update&#xd;
+--bwqnoolFFLtN2JKltaAV0HonULERO-jPC5q--&#xd;
+</queryString>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/secure/EditIssue.jspa?atl_token=NOT%20FOUND</java.net.URL>
+  </httpSample>
+  <httpSample t="5" lt="4" ts="1627734587553" s="true" lb="735 /rest/webResources/1.0/resources" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="1054" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: AWSALB=zX7Siy1tVrCbbRo58aYSOUy/KWmalGet+lTL4467Dix5pgYbsPfV68pxaSBptZa4Eb0N+iqnXEKr1+DKJOEgbyyh8Qqoz3HbM+H/E8XtnUyywZsi4SUSiAh2n1i0; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=zX7Siy1tVrCbbRo58aYSOUy/KWmalGet+lTL4467Dix5pgYbsPfV68pxaSBptZa4Eb0N+iqnXEKr1+DKJOEgbyyh8Qqoz3HbM+H/E8XtnUyywZsi4SUSiAh2n1i0; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679412x8
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Content-Length: 214
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/webResources/1.0/resources</java.net.URL>
+  </httpSample>
+  <httpSample t="5" lt="5" ts="1627734587558" s="true" lb="740 /rest/webResources/1.0/resources" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="1677" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: AWSALB=csSEMPbmN40/S/f+Bq6nX6bMciSi220wToY4HRmSyaqHIFTW0FpRyhEqrtI/OY4Sfc/vI3yb728SY/C4CCQ4zpX2YeQoubOTnOx2iJLO/3M9X+jfkEzqQXNJ4TzY; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=csSEMPbmN40/S/f+Bq6nX6bMciSi220wToY4HRmSyaqHIFTW0FpRyhEqrtI/OY4Sfc/vI3yb728SY/C4CCQ4zpX2YeQoubOTnOx2iJLO/3M9X+jfkEzqQXNJ4TzY; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679413x7
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Content-Length: 210
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/webResources/1.0/resources</java.net.URL>
+  </httpSample>
+  <httpSample t="2" lt="2" ts="1627734587563" s="true" lb="745 /rest/bamboo/latest/deploy/AAFAIA/AAFAIA-4907" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="1075" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: AWSALB=MXUZyJYBmGdOsAf8cxBzfVH5H15ry+glisfSSacnlsmP1a8o9vO55PNti3UY06ZtaH9dgTpGyThXTErL1G82vdqeWcPt0em9mEkxx6KSPcS2SA2la46zHoM5QV21; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=MXUZyJYBmGdOsAf8cxBzfVH5H15ry+glisfSSacnlsmP1a8o9vO55PNti3UY06ZtaH9dgTpGyThXTErL1G82vdqeWcPt0em9mEkxx6KSPcS2SA2la46zHoM5QV21; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679414x7
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+Vary: User-Agent
+Content-Encoding: gzip
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept-Language: en-US,en;q=0.5
+X-Requested-With: XMLHttpRequest
+Accept-Encoding: gzip, deflate
+Accept: application/json, text/javascript, */*; q=0.01
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/bamboo/latest/deploy/AAFAIA/AAFAIA-4907?_=1627734587563</java.net.URL>
+  </httpSample>
+  <httpSample t="46" lt="46" ts="1627734587565" s="true" lb="750 /secure/AjaxIssueEditAction!default.jspa" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="8489" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Connection: keep-alive
+Set-Cookie: AWSALB=TtoopXZkWHU+Na9JJoq6g5J0Kg7ENzR1x5c8J2RLvOI1d99FU9cAxK52GqVtuGn/NDECPIVOdIkLXmUYOz7cgoZ8rGGgBw1Z4VACQIGwxBFd+ZkQHpiln66+TwP2; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=TtoopXZkWHU+Na9JJoq6g5J0Kg7ENzR1x5c8J2RLvOI1d99FU9cAxK52GqVtuGn/NDECPIVOdIkLXmUYOz7cgoZ8rGGgBw1Z4VACQIGwxBFd+ZkQHpiln66+TwP2; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679415x7
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+Cache-Control: no-cache, no-store, must-revalidate
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Vary: User-Agent
+Content-Length: 7403
+Content-Encoding: gzip
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept-Language: en-US,en;q=0.5
+X-Requested-With: XMLHttpRequest
+X-SITEMESH-OFF: true
+Accept-Encoding: gzip, deflate
+Accept: */*
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/secure/AjaxIssueEditAction!default.jspa?decorator=none&amp;issueId=210415&amp;_=1627734587565</java.net.URL>
+  </httpSample>
+  <httpSample t="3" lt="3" ts="1627734587611" s="true" lb="755 /rest/analytics/1.0/publish/bulk" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="980" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+Set-Cookie: AWSALB=T6gufWtkLQ+wPJf2JNqrDfSpivkqYmk+c4ENRAow1qPH2Hap1km4xUyZEYULkKc9Gyrd3pfkTYruY+WGhfbq+vFARyb+91MrBRfeYqzg4gg9wxEesuh+xPzuWzCJ; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=T6gufWtkLQ+wPJf2JNqrDfSpivkqYmk+c4ENRAow1qPH2Hap1km4xUyZEYULkKc9Gyrd3pfkTYruY+WGhfbq+vFARyb+91MrBRfeYqzg4gg9wxEesuh+xPzuWzCJ; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679424x7
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Content-Length: 477
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/analytics/1.0/publish/bulk</java.net.URL>
+  </httpSample>
+  <httpSample t="8" lt="8" ts="1627734587614" s="true" lb="760 /rest/webResources/1.0/resources" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="4070" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: AWSALB=BuzTe2B9UH61N3k5fZSih1fpjHmkZVz7VFyaM3mSLKTXQdMgcr8KJ1/Zj/MDNupUmlf1fg7caAC9VpSMOooby6ZT6d/bN4j9HhrghsmB8TvjtCCU1MZ90D67WB42; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=BuzTe2B9UH61N3k5fZSih1fpjHmkZVz7VFyaM3mSLKTXQdMgcr8KJ1/Zj/MDNupUmlf1fg7caAC9VpSMOooby6ZT6d/bN4j9HhrghsmB8TvjtCCU1MZ90D67WB42; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679426x7
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Content-Length: 658
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/webResources/1.0/resources</java.net.URL>
+  </httpSample>
+  <httpSample t="10" lt="10" ts="1627734587622" s="true" lb="765 /rest/projects/1.0/project/AAFAIA/lastVisited" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="1067" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Set-Cookie: AWSALB=4anF4iGCIjHEE4Puz6F/Z2yQUdY138d/lBh0wS0ukMs5eVUM5ZsdyCeM4a1mCf61y5/U/D338k7e5gYnVTNOgXLmbhu4ySZjihV0DbTkvilKE9zmJqDXJzKoQJ3i; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=4anF4iGCIjHEE4Puz6F/Z2yQUdY138d/lBh0wS0ukMs5eVUM5ZsdyCeM4a1mCf61y5/U/D338k7e5gYnVTNOgXLmbhu4ySZjihV0DbTkvilKE9zmJqDXJzKoQJ3i; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679432x9
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+Vary: User-Agent
+Content-Encoding: gzip
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept-Language: en-US,en;q=0.5
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+Accept-Encoding: gzip, deflate
+Accept: */*
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Content-Length: 81
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/projects/1.0/project/AAFAIA/lastVisited</java.net.URL>
+  </httpSample>
+  <httpSample t="3" lt="3" ts="1627734587632" s="true" lb="770 /rest/analytics/1.0/publish/bulk" rc="200" rm="" tn="Jira 1-122" dt="text" de="UTF-8" by="980" ng="200" na="200">
+    <responseHeader class="java.lang.String">HTTP/1.1 200 
+Date: Sat, 31 Jul 2021 12:29:47 GMT
+Content-Type: application/json;charset=UTF-8
+Content-Length: 0
+Connection: keep-alive
+Set-Cookie: AWSALB=Fd4ArRHXOIviHbbyPRBbeSxvjfUEoW1Fg4/A8gZBa8I3+PZlgFbbXzV4+o0arf8Ay5vTLZJI4mTqzxNyJSNStOeQ27lgAlVhRlZwlbEMDullf1/cxDCVOaVWK7Nw; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/
+Set-Cookie: AWSALBCORS=Fd4ArRHXOIviHbbyPRBbeSxvjfUEoW1Fg4/A8gZBa8I3+PZlgFbbXzV4+o0arf8Ay5vTLZJI4mTqzxNyJSNStOeQ27lgAlVhRlZwlbEMDullf1/cxDCVOaVWK7Nw; Expires=Sat, 07 Aug 2021 12:29:47 GMT; Path=/; SameSite=None
+X-AREQUESTID: 749x679435x8
+X-ASESSIONID: 1hrl03c
+X-ANODEID: i-0aee4779e9f1a9e7a
+Referrer-Policy: strict-origin-when-cross-origin
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors &apos;self&apos;
+Strict-Transport-Security: max-age=31536000
+X-Seraph-LoginReason: OK
+X-AUSERNAME: performance_dfzfhoubvk
+Cache-Control: no-cache, no-store, no-transform
+</responseHeader>
+    <requestHeader class="java.lang.String">Connection: keep-alive
+Accept: application/json, text/javascript, */*; q=0.01
+X-Requested-With: XMLHttpRequest
+Content-Type: application/json
+Origin: http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com:80
+Content-Length: 2448
+Host: jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com
+User-Agent: Apache-HttpClient/4.5.10 (Java/1.8.0_282)
+</requestHeader>
+    <java.net.URL>http://jira-loadb-1r5ojm5ov33u0-192614182.us-west-2.elb.amazonaws.com/rest/analytics/1.0/publish/bulk</java.net.URL>
+  </httpSample>
+  <responseHeader class="java.lang.String"></responseHeader>
+  <requestHeader class="java.lang.String"></requestHeader>
+  <responseData class="java.lang.String">Non-TEXT response data, cannot record: ()</responseData>
+</sample>
+
+</testResults>
